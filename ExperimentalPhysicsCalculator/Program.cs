@@ -9,15 +9,6 @@ namespace ExperimentalPhysicsCalculator
         public static IErrorPropagation _errorPropagation = new ErrorPropagation();
         public static IStatisticalTreatment _statisticalTreatment = new StatisticalTreatment();
 
-        public Program(
-            IErrorPropagation errorPropagation,
-            IStatisticalTreatment statisticalTreatment
-        )
-        {
-            _errorPropagation = errorPropagation;
-            _statisticalTreatment = statisticalTreatment;
-        }
-
         static void Main(string[] args)
         {
             var subject = "";
